@@ -1,4 +1,4 @@
-bs4==4.10.0
+beautifulsoup4==4.10.0
 wordcloud==1.8.1
 nltk==3.6.5
 keybert==0.5.0
