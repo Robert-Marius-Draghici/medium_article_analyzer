@@ -4,8 +4,6 @@ os.environ['TRANSFORMERS_CACHE'] = './transformers/cache/'
 from functools import cache, lru_cache
 import os.path
 import re
-from pprint import pprint 
-import base64
 import requests
 from bs4 import BeautifulSoup
 from wordcloud import WordCloud, STOPWORDS
