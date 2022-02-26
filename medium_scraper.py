@@ -108,9 +108,9 @@ def main():
 
     parameters = {}
     parameters["url"] = st.text_area("Enter the url of the article that you want to analyze here",height=10,help="paste the url of the article to be analyzed")
-    parameters["summary_percentage"] = st.number_input("Enter the summary percentage from the original text", min_value=0, max_value=100, format="%d")
-    parameters["nr_keywords"] = st.number_input("Enter the number of keywords to be extracted from the text", min_value=0, max_value=20, format="%d")
-    parameters["max_ngram_length"] = st.number_input("Enter the maximum length of a keyword phrase", min_value=1, max_value=10, format="%d")
+    parameters["summary_percentage"] = st.number_input("Enter the summary percentage from the original text", min_value=5, value=30, max_value=100, format="%d")
+    parameters["nr_keywords"] = st.number_input("Enter the number of keywords to be extracted from the text", min_value=1, value=10, max_value=20, format="%d")
+    parameters["max_ngram_length"] = st.number_input("Enter the maximum length of a keyword phrase", min_value=1, value=1, max_value=10, format="%d")
 
     analyze(parameters)
 
